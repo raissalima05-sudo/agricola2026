@@ -1,0 +1,183 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1b4332;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #52b788;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #52b788;
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.hero button {
+    background-color: #52b788;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background-color: #40916c;
+}
+
+/* Seção de Pilares */
+.conteudo {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.conteudo h2 {
+    font-size: 32px;
+    color: #1b4332;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 300px;
+    flex: 1 1 250px;
+    border-top: 5px solid #2d6a4f;
+}
+
+.card h3 {
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+/* Seção de Contato */
+.contato {
+    background-color: #d8f3dc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    color: #1b4332;
+    margin-bottom: 30px;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+#form-contato input {
+    padding: 12px;
+    border: 1px solid #95d5b2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-contato button {
+    background-color: #1b4332;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#form-contato button:hover {
+    background-color: #2d6a4f;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
